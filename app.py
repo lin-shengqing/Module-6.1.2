@@ -13,9 +13,9 @@ from dotenv import load_dotenv
 if os.path.exists('.env'):
     load_dotenv()
 
-# for AWS, do not run this because not using .env
+ for AWS, do not run this because not using .env
 #os.environ["GROQ_API_KEY"] = ""
-#os.environ["GROQ_API_KEY"] = os.environ.get('GROQ_API_KEY')
+os.environ["GROQ_API_KEY"] = os.environ.get('GROQ_API_KEY')
 
 client = Groq()
 
